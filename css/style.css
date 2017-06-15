@@ -50,7 +50,7 @@ a img {
   border: none;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
@@ -59,6 +59,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../src/iconfont.ttf") format("truetype");
   /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
 }
+
 .iconfont {
   color: #00b38a;
   font-family: "iconfont" !important;
@@ -101,8 +102,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -125,9 +126,9 @@ body {
 
 a {
   text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -151,12 +152,14 @@ a {
   position: relative;
   width: 1024px;
   margin: 50px auto;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: 0 0 15px #c0c0c0;
-  -webkit-box-shadow: 0 0 15px #c0c0c0;
-  box-shadow: 0 0 15px #c0c0c0;
+  -webkit-box-shadow: 0 0 15px silver;
+  -moz-box-shadow: 0 0 15px silver;
+  box-shadow: 0 0 15px silver;
   background-color: #fff;
   overflow: hidden;
 }
@@ -164,8 +167,10 @@ a {
   .content {
     width: 100%;
     margin: 0;
-    -moz-border-radius: 0;
     -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
     border-radius: 0;
   }
 }
@@ -174,7 +179,7 @@ a {
   width: 100%;
   height: inherit;
   color: #fff;
-  background-color: #eee;
+  background-color: #eeeeee;
   overflow: hidden;
 }
 @media screen and (max-width: 720px) {
@@ -248,7 +253,7 @@ a {
 .content-hd .job {
   text-align: center;
   color: #00b38a;
-  font-size: 22px;
+  font-size: 24px;
 }
 @media screen and (max-width: 720px) {
   .content-hd .job {
@@ -300,16 +305,16 @@ a {
   flex: 3;
 }
 .content-hd .skill-level .i-js .in {
-  flex: 8;
+  flex: 6.5;
 }
 .content-hd .skill-level .i-js .out {
-  flex: 2;
+  flex: 3.5;
 }
 .content-hd .skill-level .i-sass .in {
-  flex: 7;
+  flex: 6;
 }
 .content-hd .skill-level .i-sass .out {
-  flex: 3;
+  flex: 4;
 }
 .content-hd .skill-level .i-ps .in {
   flex: 7.5;
@@ -455,8 +460,10 @@ a {
   min-width: 100px;
   margin: 0 auto;
   padding: 4px 10px;
-  -moz-border-radius: 32px;
   -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
   border-radius: 32px;
   font-size: 16px;
   text-align: center;
@@ -519,8 +526,10 @@ a {
   font-size: 12px;
   line-height: 14px;
   border: 1px solid #d1d1d1;
-  -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
   margin: 2px;
   padding: 0 3px;
@@ -531,8 +540,10 @@ a {
   font-size: 12px;
   line-height: 14px;
   border: 1px solid #f3f3f3;
-  -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
   font-weight: 500;
   color: #444;
@@ -677,7 +688,8 @@ footer.print-footer {
 @media print {
   @page {
     margin: 0;
-  }
+}
+
   .content {
     width: 970px;
     height: 1365px;
@@ -686,6 +698,10 @@ footer.print-footer {
     -webkit-border-radius: 0;
     border-radius: 0;
     padding: 0;
+  }
+  .content .content-left {
+    flex: 6.5;
+    padding: 0 15px 0;
   }
 
   .content .content-hd {

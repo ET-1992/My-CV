@@ -123,7 +123,6 @@ a {
   }
   .avator{
     display: block;
-    width: 200px;
     height: 200px;
     margin: 0 auto;
     @media screen and(max-width: 720px){
@@ -584,6 +583,10 @@ footer {
     -webkit-border-radius: 0;
     border-radius: 0;
     padding: 0;
+    .content-left{
+      flex: 6.5;
+      padding: 0 15px 0;
+    }
   }
   .content .content-hd {
     height: 1365px;
