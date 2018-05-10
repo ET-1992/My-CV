@@ -4,5 +4,8 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-compass": "^2.1.0"
+  },
+  "scripts": {
+    "start": "gulp"
   }
 }

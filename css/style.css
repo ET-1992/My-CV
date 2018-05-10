@@ -216,8 +216,8 @@ a {
 }
 @media screen and (max-width: 720px) {
   .content-hd .avator {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
   }
 }
 .content-hd .name {
@@ -229,11 +229,13 @@ a {
   font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
   font-weight: 500;
   letter-spacing: 5px;
+  font-size: 40px;
 }
 @media screen and (max-width: 720px) {
   .content-hd .name h1 {
     letter-spacing: 0;
     line-height: 1.25;
+    font-size: 40px;
   }
 }
 .content-hd .name small {
@@ -311,16 +313,16 @@ a {
   flex: 3.5;
 }
 .content-hd .skill-level .i-sass .in {
-  flex: 6;
+  flex: 8;
 }
 .content-hd .skill-level .i-sass .out {
-  flex: 4;
+  flex: 2;
 }
 .content-hd .skill-level .i-ps .in {
-  flex: 7.5;
+  flex: 6;
 }
 .content-hd .skill-level .i-ps .out {
-  flex: 2.5;
+  flex: 4;
 }
 @media screen and (max-width: 1024px) {
   .content-hd .skill-level {
@@ -330,6 +332,7 @@ a {
 .content-hd .info {
   color: #555;
   line-height: 30px;
+  text-align: center;
 }
 .content-hd .info h2 {
   margin: 30px 0 4px;
@@ -478,14 +481,13 @@ a {
   line-height: 20px;
   overflow: hidden;
   font-weight: 500;
+  text-align: center;
 }
 .content-bd .item-hd .iconfont {
   color: #00b38a;
 }
 .content-bd .item-hd .item-time {
-  display: inline-block;
   float: left;
-  width: 25%;
 }
 @media screen and (max-width: 720px) {
   .content-bd .item-hd .item-time {
@@ -506,8 +508,7 @@ a {
   }
 }
 .content-bd .item-hd .item-name {
-  display: inline-block;
-  float: left;
+
 }
 .content-bd .item-bd {
   margin-bottom: 5px;
@@ -560,7 +561,6 @@ a {
   line-height: 18px;
 }
 .content-bd .practice .item-time {
-  width: 32%;
 }
 @media screen and (max-width: 720px) {
   .content-bd .practice .item-time {
@@ -692,7 +692,7 @@ footer.print-footer {
 
   .content {
     width: 970px;
-    height: 1365px;
+    height: 2000px;
     margin: 0 auto;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
@@ -700,12 +700,12 @@ footer.print-footer {
     padding: 0;
   }
   .content .content-left {
-    flex: 6.5;
+    flex: 8;
     padding: 0 15px 0;
   }
 
   .content .content-hd {
-    height: 1365px;
+    height: 2000px;
   }
 
   .content .print-hidden {
@@ -727,7 +727,7 @@ footer.print-footer {
   footer.print-footer .footer-link {
     position: absolute;
     left: 45px;
-    bottom: 25px;
+    bottom: 0px;
     color: #c0c0c0;
     display: inline-block;
   }
